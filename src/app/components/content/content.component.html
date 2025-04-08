@@ -1,0 +1,36 @@
+<div @fadeIn>
+  <div
+    class="w-full text-center text-5xl font-bold absolute pt-6 z-10"
+  >
+    Stunning Resume Templates
+  </div>
+
+  <swiper-container
+    [slidesPerView]="3"
+    [pagination]="true"
+    [navigation]="true"
+    [centeredSlides]="false"
+    [loop]="true"
+    class="w-full h-194 relative bg-[#f6f6f6]"
+  >
+    <swiper-slide *ngFor="let d of cardsData; let i = index" class="slide">
+      <div
+        class="slide-content bg-[#f2f2f2] h-[470px] flex justify-center items-center rounded-xl border-2 border-indigo-500 overflow-hidden transition-transform duration-300 relative"
+      >
+        <img [src]="d.photo" class="w-full h-full object-cover" />
+
+        <!-- Button jo sirf middle wale slide pe dikhega -->
+        <button
+          class="use-btn absolute bottom-5 bg-indigo-600 text-white px-4 py-2 rounded-lg opacity-0 transition-opacity duration-300 cursor-pointer"
+        >
+          Use This Template
+        </button>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  <button
+    class="absolute top-488 left-146.5 z-1000 bg-indigo-600 px-4 py-2 text-white rounded-lg cursor-pointer"
+  >
+    Show All
+  </button>
+</div>

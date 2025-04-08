@@ -1,0 +1,66 @@
+<div @fadeIn>
+  <div class="bg-[#0f141e] h-auto px-10 py-10 flex flex-col items-center">
+    <div class="w-full relative max-w-6xl">
+      <div class="px-10 py-6 font-bold text-4xl text-white text-center">
+        Browse a collection of unique portfolio website templates
+      </div>
+
+      <!-- Cards Container -->
+      <div class="relative flex items-center justify-center px-6 py-6 w-full">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 w-full"
+        >
+          <div
+            *ngFor="let card of cards"
+            class="group relative bg-white shadow-lg rounded-2xl overflow-hidden border border-gray-200 transition-transform duration-300 hover:scale-105 hover:shadow-xl p-4"
+          >
+            <!-- Video/Image Container -->
+            <div class="w-full h-[200px] relative overflow-hidden">
+              <!-- Video -->
+              <video
+                *ngIf="card.video"
+                [src]="card.video"
+                class="w-full h-full object-cover transition-opacity duration-300 absolute top-0 left-0 opacity-0 cursor-pointer"
+                [poster]="card.poster"
+                loop
+                muted
+                playsinline
+                (mouseenter)="playVideo($event)"
+                (mouseleave)="pauseVideo($event)"
+              ></video>
+
+              <!-- Poster Image -->
+              <img
+                [src]="card.poster"
+                alt="Resume Template"
+                class="w-full h-full object-cover transition-opacity duration-300"
+              />
+            </div>
+
+            <!-- Description & Create Button -->
+            <div class="p-4 flex flex-col items-center text-center">
+              <p class="text-gray-800 font-semibold mt-2 text-sm">
+                {{ card.description }}
+              </p>
+              <button
+                class="mt-3 px-6 py-2 relative text-white rounded-3xl font-semibold shadow-md overflow-hidden cursor-pointer before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%]"
+              >
+                <span class="relative z-10">Create</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Show All Button at the Right End -->
+      <div class="w-full flex justify-end mt-6">
+        <button
+          (click)="navigateToPortfolio()"
+          class="px-5 py-2 relative text-white rounded-3xl font-semibold shadow-md overflow-hidden cursor-pointer before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%]"
+        >
+          <span class="relative z-10">Show All</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

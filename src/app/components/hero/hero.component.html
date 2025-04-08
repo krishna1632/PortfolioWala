@@ -1,0 +1,61 @@
+<div @fadeIn>
+  <div class="hero my-10 h-100 px-15">
+    <div class="h-full flex flex-col lg:flex-row">
+      <!-- Text Content -->
+      <div class="flex-1 flex flex-col gap-5 justify-center" @slideInLeft>
+        <!-- Static Heading -->
+        <div class="px-5 animated-heading">
+          The ultimate resume and portfolio builder
+        </div>
+
+        <!-- Typing Animation -->
+        <div
+          class="text-2xl font-semibold px-5 text-purple-600 typing-container"
+        >
+          {{ currentText }}<span class="blinking-cursor"></span>
+        </div>
+
+        <div class="px-5 font-semibold text-justify" @fadeInUp>
+          Build beautiful, recruiter-tested resumes and stunning portfolios in
+          just a few clicks! Our powerful and easy-to-use builder helps you
+          create professional resumes and portfolios with a range of amazing
+          functions. Custom-tailor them for any job or personal brand within
+          minutes. Boost your interview chances, showcase your skills, and stand
+          out from the competition.
+        </div>
+
+        <div
+          class="px-5 flex flex-col sm:flex-row justify-between gap-4"
+          @staggerButtons
+        >
+          <div
+            class="relative inline-block py-3 px-8 text-white font-semibold mb-4 cursor-pointer rounded-3xl overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%] transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl glow-on-hover"
+            @buttonHover
+          >
+            <span class="relative z-10">See Templates</span>
+          </div>
+
+          <div
+            class="relative inline-block py-3 px-8 text-white font-semibold mb-4 cursor-pointer rounded-3xl overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%] transform hover:scale-105 transition-transform duration-300 shadow-lg hover:shadow-xl glow-on-hover"
+            @buttonHover
+          >
+            <span class="relative z-10">Create your portfolio</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Image Content -->
+      <div class="flex-1" @slideInRight>
+        <div class="relative floating-image-container">
+          <img
+            src="images/hero_logo.webp"
+            alt="Hero Image"
+            class="w-full h-full object-contain curved-image floating-image"
+          />
+          <div class="absolute inset-0 floating-dots"></div>
+          <div class="absolute inset-0 floating-shapes"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

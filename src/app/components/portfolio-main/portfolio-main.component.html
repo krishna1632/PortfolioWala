@@ -1,0 +1,64 @@
+<div class="container mx-auto p-6 bg-[#f6f6f6]">
+  <!-- Search and Filters -->
+  <div class="flex justify-between items-center mb-6 p-4 bg-red-600 rounded-lg">
+    <input
+      type="text"
+      placeholder="Search for templates"
+      class="border p-2 rounded w-72"
+    />
+    <div class="flex items-center space-x-4  bg-white p-4 rounded-lg">
+      <span class="font-semibold">Sort By</span>
+      <a href="#" class="text-blue-600 font-semibold border-b-2 border-blue-600"
+        >Relevance</a
+      >
+      <a href="#" class="text-gray-700 hover:text-blue-600">Popularity</a>
+      <a href="#" class="text-gray-700 hover:text-blue-600"
+        >Price -- Low to High</a
+      >
+      <a href="#" class="text-gray-700 hover:text-blue-600"
+        >Price -- High to Low</a
+      >
+      <a href="#" class="text-gray-700 hover:text-blue-600">Newest First</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="flex justify-center gap-3 bg-orange-500 p-4 items-start">
+    <!-- Sidebar -->
+    <div class="w-1/4 pr-4 border-1 bg-red-400 h-100">
+      <ul class="space-y-2">
+        <li class="font-bold">All</li>
+        <li>Featured</li>
+        <li>Free</li>
+        <li>Architecture & Design</li>
+        <li>Arts & Entertainment</li>
+        <li>Blog & Editorial</li>
+      </ul>
+    </div>
+
+    <!-- Template Listing -->
+    <div class="w-3/4 grid grid-cols-3 gap-6 bg-pink-900 px-2 py-2">
+      <div class="border rounded-lg overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/300" alt="Template" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Digital Marketer Portfolio</h3>
+          <p>$79 USD</p>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/300" alt="Template" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Portfolio & Personal Template</h3>
+          <p>$49 USD</p>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-lg">
+        <img src="https://via.placeholder.com/300" alt="Template" />
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Quadro</h3>
+          <p>$49 USD</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

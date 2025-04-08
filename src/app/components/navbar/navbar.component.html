@@ -1,0 +1,30 @@
+<div class="top-header shadow-lg sticky-top-0">
+  <div class="inner-top-header flex justify-between">
+    <div class="">
+      <img src="images/logo.png" alt="" class="h-full w-full" />
+    </div>
+    <div class="w-160 flex justify-between items-center">
+      <div class="side-text">Resume</div>
+      <div class="side-text">CV</div>
+      <div class="side-text">Portfolio</div>
+      <div class="side-text">Contact US</div>
+
+      <!-- Login Button -->
+      <div
+        class="relative px-5 py-1 text-white font-semibold cursor-pointer rounded-3xl overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%]"
+      >
+        <span class="relative z-10">Login</span>
+      </div>
+
+      <!-- Sign Up Button -->
+      <div
+        (click)="openSignup()"
+        class="relative px-5 py-1 text-white font-semibold cursor-pointer rounded-3xl overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-orange-500 before:to-purple-600 before:bg-[length:200%_100%] before:bg-[position:200%_0%] before:transition-all before:duration-500 before:ease-in-out hover:before:bg-[position:0%_0%]"
+      >
+        <span class="relative z-10">Sign Up</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Signup Modal -->
+<app-signup *ngIf="showSignupModal" (close)="closeSignup()"></app-signup>
