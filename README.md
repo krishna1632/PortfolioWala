@@ -1,59 +1,113 @@
-# PortfolioWala
+# 🌟 PortfolioWala – AI-Powered Resume & Portfolio Builder
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+**PortfolioWala** is an AI-powered Resume and Portfolio website builder that allows users to create stunning, personalized portfolios and resumes using free or paid templates. Whether the user wants to build it manually or let AI take over – PortfolioWala does it all!
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Project Status
+
+⚠️ **Currently in Development**
+
+- ✅ Front page UI is completed
+- ⏳ Other pages and AI integration are in progress
+- 🔜 Deployment and template library are upcoming
+
+---
+
+## 🎯 Project Purpose
+
+Creating a personal portfolio or resume can be time-consuming and confusing. **PortfolioWala** solves this by offering:
+
+- Professionally designed templates (free and premium)
+- Smart template recommendations using AI
+- Automatic portfolio generation based on user profile
+- Hosting the final website without user needing technical knowledge
+
+---
+
+## 🧠 Key Features
+
+- 🎨 Free & Paid resume and portfolio templates
+- ✍️ Manual customization for users who want more control
+- 🤖 **AI Generator**: Enter your details → Get full portfolio generated
+- 📤 **Auto Hosting**: The system hosts the final portfolio website for the user
+- 🧠 **Smart Suggestions**: If the user is unsure, AI recommends the best suitable design based on their profile
+
+---
+
+## 🛠️ Tech Stack
+
+| Category           | Technology                   |
+| ------------------ | ---------------------------- |
+| **Frontend**       | Angular                      |
+| **Language**       | TypeScript, HTML, SCSS       |
+| **Styling**        | SCSS / CSS                   |
+| **AI Integration** | Planned with ML libraries    |
+| **Hosting**        | (Planned) Auto-deploy system |
+
+---
+
+## 📁 Folder Structure
 
 ```bash
+PortfolioWala/
+│
+├── src/
+│   ├── app/             # Angular components, services, modules
+│   ├── public/          # Images, icons, logos
+│   └── index.html       # Root HTML file
+│
+├── angular.json         # Angular config
+├── package.json         # Project dependencies
+└── README.md            # This file
+```
+
+💻 How to Run Locally
+Follow these steps to run the project on your local machine:
+
+# Clone the repository
+
+git clone https://github.com/yourusername/PortfolioWala.git
+
+# Navigate to the project directory
+
+cd PortfolioWala
+
+# Install dependencies
+
+npm install
+
+# Run the development server
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📸 Screenshots
 
-## Code scaffolding
+### 🖥️ Home Page UI
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+![Navbar and Hero Section](public/screenshots/homepage1.png)
+![About Section](public/screenshots/homepage2.png)
 
-```bash
-ng generate component component-name
-```
+## 📅 Upcoming Features
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+🤖 Full AI integration for auto-portfolio generation
 
-```bash
-ng generate --help
-```
+💳 Payment gateway for purchasing premium templates
 
-## Building
+🚀 Automated hosting of user portfolios
 
-To build the project run:
+🧾 Resume PDF export and download
 
-```bash
-ng build
-```
+🔐 User dashboard and login/signup system
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🙌 Contributing
 
-## Running unit tests
+Currently, this is a solo college project in progress.
+In future, contributions and collaborations are welcome!
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🙋‍♂️ About the Creator
 
-```bash
-ng test
-```
+Made with 💻 and ☕ by Dwaipyan Singha
+📧 For internship queries or collaborations: Reach out anytime
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🚧 This is a college-level project under active development. Feedback and suggestions are always appreciated!
